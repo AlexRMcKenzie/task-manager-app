@@ -10,3 +10,4 @@ const Header = ({ showForm, changeTextAndColor }) => {
     </header>
   )
 }
+export default Header;

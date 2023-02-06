@@ -34,7 +34,18 @@ function App() {
     setTasks([...tasks, newTask]);
     Swal.fire({
       icon: 'success',
-      title: 'Oops',
+      title: 'Yay...',
+      text: 'You have successfully added a new task!'
+    })
+    localStorage.setItem("taskAdded", JSON.stringify([...tasks, newTask]));
+  }
+  // Delete Task
+  const deleteTask = (id) => {
+    const deleteTask = tasks.filter((task) => task.id !== id);
+    setTasks(deleteTask);
+    Swal.fire({
+      icon: 'success',
+      title: 'Oops...',
       text: 'You have successfully deleted a task!'
     })
     localStorage.setItem("taskAdded", JSON.stringify(deleteTask));

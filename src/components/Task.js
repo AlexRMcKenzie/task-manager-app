@@ -7,7 +7,7 @@ const Task = ({ task, onDelete, onEdit }) => {
       <div className="task">
         <div>
           <p className="taskName">
-            <span className="textBold">Task NameL</span> {task.text}
+            <span className="textBold">Task Name</span> {task.text}
           </p>
       <p className="taskDate"><span className="textBold">Date of Completion:</span>
         </p>
